@@ -6,7 +6,8 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#040918] to-[#091540] text-white px-4 py-6">
       <Header />
-
+      {/* To test that images are working correctly */}
+      <img src="./src/assets/images/logo-devlens.svg" alt="" className='h-30 w-30'/>
       <section className="max-w-6xl mx-auto mt-10">
         <ExtensionList />
       </section>
