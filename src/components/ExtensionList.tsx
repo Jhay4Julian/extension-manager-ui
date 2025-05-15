@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ExtensionCard from "./ExtensionCard";
+import devlensIcon from "../assets/images/logo-devlens.svg";
 
 
 export default function ExtensionList() {
@@ -7,7 +8,8 @@ export default function ExtensionList() {
   const [extensions, setExtensions] = useState([
     {
       id: 1,
-      "logo": "./src/assets/images/logo-devlens.svg",
+      // "logo": "./src/assets/images/logo-devlens.svg",
+      "logo": devlensIcon,
       "name": "DevLens",
       "description": "Quickly inspect page layouts and visualize element boundaries.",
       "isActive": true
