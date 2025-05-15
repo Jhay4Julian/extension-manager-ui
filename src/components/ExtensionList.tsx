@@ -1,6 +1,17 @@
 import { useState } from "react";
 import ExtensionCard from "./ExtensionCard";
 import devlensIcon from "../assets/images/logo-devlens.svg";
+import styleSpyIcon from "../assets/images/logo-style-spy.svg";
+import speedBoostIcon from "../assets/images/logo-speed-boost.svg";
+import jsonWizardIcon from "../assets/images/logo-json-wizard.svg";
+import tabMasterProIcon from "../assets/images/logo-tab-master-pro.svg";
+import viewportBuddyIcon from "../assets/images/logo-viewport-buddy.svg";
+import markupNotesIcon from "../assets/images/logo-markup-notes.svg";
+import gridGuidesIcon from "../assets/images/logo-grid-guides.svg";
+import palettePickerIcon from "../assets/images/logo-palette-picker.svg";
+import linkCheckerIcon from "../assets/images/logo-link-checker.svg";
+import domSnapshotIcon from "../assets/images/logo-dom-snapshot.svg";
+import consolePlusIcon from "../assets/images/logo-console-plus.svg";
 
 
 export default function ExtensionList() {
@@ -8,7 +19,6 @@ export default function ExtensionList() {
   const [extensions, setExtensions] = useState([
     {
       id: 1,
-      // "logo": "./src/assets/images/logo-devlens.svg",
       "logo": devlensIcon,
       "name": "DevLens",
       "description": "Quickly inspect page layouts and visualize element boundaries.",
@@ -16,77 +26,77 @@ export default function ExtensionList() {
     },
     {
       id: 2,
-      "logo": "./src/assets/images/logo-style-spy.svg",
+      "logo": styleSpyIcon,
       "name": "StyleSpy",
       "description": "Instantly analyze and copy CSS from any webpage element.",
       "isActive": true
     },
     {
       id: 3,
-      "logo": "./src/assets/images/logo-speed-boost.svg",
+      "logo": speedBoostIcon,
       "name": "SpeedBoost",
       "description": "Optimizes browser resource usage to accelerate page loading.",
       "isActive": false
     },
     {
       id: 4,
-      "logo": "./src/assets/images/logo-json-wizard.svg",
+      "logo": jsonWizardIcon,
       "name": "JSONWizard",
       "description": "Formats, validates, and prettifies JSON responses in-browser.",
       "isActive": true
     },
     {
       id: 5,
-      "logo": "./src/assets/images/logo-tab-master-pro.svg",
+      "logo": tabMasterProIcon,
       "name": "TabMaster Pro",
       "description": "Organizes browser tabs into groups and sessions.",
       "isActive": true
     },
     {
       id: 6,
-      "logo": "./src/assets/images/logo-viewport-buddy.svg",
+      "logo": viewportBuddyIcon,
       "name": "ViewportBuddy",
       "description": "Simulates various screen resolutions directly within the browser.",
       "isActive": false
     },
     {
       id: 7,
-      "logo": "./src/assets/images/logo-markup-notes.svg",
+      "logo": markupNotesIcon,
       "name": "Markup Notes",
       "description": "Enables annotation and notes directly onto webpages for collaborative debugging.",
       "isActive": true
     },
     {
       id: 8,
-      "logo": "./src/assets/images/logo-grid-guides.svg",
+      "logo": gridGuidesIcon,
       "name": "GridGuides",
       "description": "Overlay customizable grids and alignment guides on any webpage.",
       "isActive": false
     },
     {
       id: 9,
-      "logo": "./src/assets/images/logo-palette-picker.svg",
+      "logo": palettePickerIcon,
       "name": "Palette Picker",
       "description": "Instantly extracts color palettes from any webpage.",
       "isActive": true
     },
     {
       id: 10,
-      "logo": "./src/assets/images/logo-link-checker.svg",
+      "logo": linkCheckerIcon,
       "name": "LinkChecker",
       "description": "Scans and highlights broken links on any page.",
       "isActive": true
     },
     {
       id: 11,
-      "logo": "./src/assets/images/logo-dom-snapshot.svg",
+      "logo": domSnapshotIcon,
       "name": "DOM Snapshot",
       "description": "Capture and export DOM structures quickly.",
       "isActive": false
     },
     {
       id: 12,
-      "logo": "./src/assets/images/logo-console-plus.svg",
+      "logo": consolePlusIcon,
       "name": "ConsolePlus",
       "description": "Enhanced developer console with advanced filtering and logging.",
       "isActive": true
