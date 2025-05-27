@@ -10,19 +10,19 @@ type ExtensionCardProps = {
 
 export default function ExtensionCard({ name, description, logo, isActive, onToggle, onRemove }: ExtensionCardProps) {
     return (
-        <div className="bg-[#1C2333] mx-auto max-w-sm p-4 rounded-xl shadow-md border border-gray-700 flex flex-col justify-between items-left">
+        <div className="bg-white dark:bg-[#1C2333] mx-auto max-w-sm p-4 rounded-xl shadow-md dark:border border-gray-700 flex flex-col justify-between items-left transition-colors duration-300 hover:shadow-lg">
             <div className="flex items-start mb-4">
                 <img src={logo} alt="" className="w-10 h-10 mt-1" />
                 <div className="ml-3">
-                    <h3 className="font-bold text-lg">{name}</h3>
-                    <p className="text-sm text-gray-400">{description}</p>
+                    <h3 className="font-bold text-lg text-gray-900 dark:text-white">{name}</h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">{description}</p>
                 </div>
             </div>
 
             <div className="flex items-center justify-between ">
                 <button 
                 onClick={onRemove}
-                className="text-gray-300 text-sm rounded-full border border-gray-700 px-3 py-1 mt-2 cursor-pointer hover:bg-red-400 hover:border hover:border-red-400 hover:text-black transition duration-300">
+                className="text-gray-500 dark:text-gray-300 text-sm rounded-full border border-gray-500 dark:border-gray-700 px-3 py-1 mt-2 cursor-pointer hover:bg-red-400 hover:border hover:border-red-400 hover:text-black transition duration-300">
                     Remove
                 </button>
                 {/* Toggle */}
