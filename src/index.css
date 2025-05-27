@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @font-face {
     font-family: NotoSans;
     src: url(./assets/fonts/NotoSans-VariableFont_wdth\,wght.ttf) format("truetype");
@@ -11,3 +13,6 @@ body {
     line-height: 1.5;
     color: #333;
 }
+
+
+
